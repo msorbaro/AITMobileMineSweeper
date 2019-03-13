@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MineSweeper</string>
+    <string name="ChangeToClick">Change to Click Mode</string>
+    <string name="ChangeToFlag">Change to Flag Mode</string>
+</resources>

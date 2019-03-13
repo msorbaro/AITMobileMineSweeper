@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="#0000FF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <com.example.msorbaro.minesweeper.ui.MSView
+            android:id="@+id/mineSweeperView"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="25dp"/>
+
+    </LinearLayout>
+
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmerLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp">
+
+        <TextView
+            android:id="@+id/mode"
+            android:textSize="22sp"
+            android:textColor="#FFFFFF"
+            android:text="You are in Click Mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnRestart"
+            android:layout_marginTop="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Restart"/>
+
+        <Button
+            android:id="@+id/btnMode"
+            android:layout_marginTop="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change to Flag Mode"/>
+    </LinearLayout>
+
+
+</LinearLayout>
